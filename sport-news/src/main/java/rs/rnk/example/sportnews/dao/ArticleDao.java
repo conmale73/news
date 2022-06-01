@@ -17,7 +17,7 @@ import rs.rnk.example.sportnews.model.UserRole;
 
 public class ArticleDao {
 	
-	private DBManager dbManager;
+	private static DBManager dbManager;
 	
 	public ArticleDao() {
 		try {
@@ -49,8 +49,14 @@ public class ArticleDao {
 		ps.setBoolean(2, true);
 		return ps;
 	}
+	private static PreparedStatement createPreparedStatementAuthor(Connection conn, int authorId) throws SQLException {
+		PreparedStatement ps = conn.prepareStatement("SELECT * FROM articles article WHERE article.author_id = ? AND article.approved = ?");
+		ps.setInt(1, authorId);
+		ps.setBoolean(2, true);
+		return ps;
+	}
 	
-	public List<Article> findByCategory(Category category, int numberOfArticles){
+	public static List<Article> findByCategory(Category category, int numberOfArticles){
 		try(Connection conn = dbManager.getConnection();
 				PreparedStatement ps = createPreparedStatement(conn, category, numberOfArticles);
 				ResultSet rs = ps.executeQuery();){
@@ -67,8 +73,25 @@ public class ArticleDao {
 			return null;
 		}
 	}
+//	public static List<Article> findByAuthorId(int authorId){
+//		try(Connection conn = dbManager.getConnection();
+//			PreparedStatement ps = createPreparedStatementAuthor(conn, authorId);
+//			ResultSet rs = ps.executeQuery();){
+//			List<Article> articles = new ArrayList<>();
+//			while(rs.next()) {
+//				var article = Article.createFromResultSet(rs);
+//				article.setCategory(category);
+//				articles.add(article);
+//			}
+//			return articles;
+//
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//			return null;
+//		}
+//	}
 	
-	private PreparedStatement createPreparedStatement(Connection conn, Category category, int numberOfArticles) throws SQLException {
+	private static PreparedStatement createPreparedStatement(Connection conn, Category category, int numberOfArticles) throws SQLException {
 		PreparedStatement ps = conn.prepareStatement("SELECT * FROM articles article WHERE article.category_id = ? AND article.approved = ? LIMIT ?");
 		ps.setInt(1, category.getId());
 		ps.setBoolean(2, true);;

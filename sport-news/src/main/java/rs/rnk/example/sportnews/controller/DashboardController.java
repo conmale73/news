@@ -48,6 +48,14 @@ public class DashboardController extends HttpServlet {
 			// Manager
 			navigationService.setCurrentNavItem(new NavigationItem("Articles"));
 			request.getRequestDispatcher("/dashboard/articles/approve").forward(request, response);
+		} else if (currentUser.getUserRole().getId() == 5){
+			//Editor
+			navigationService.setCurrentNavItem(new NavigationItem("Articles"));
+			request.getRequestDispatcher("/dashboard/articles/yourArticles").forward(request, response);
+		} else if (currentUser.getUserRole().getId() == 4) {
+			//Author
+			navigationService.setCurrentNavItem(new NavigationItem("Articles"));
+			request.getRequestDispatcher("/dashboard/articles/yourArticles").forward(request, response);
 		}
 	}
 	

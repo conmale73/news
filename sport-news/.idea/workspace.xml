@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="sport-news:war" />
+      <artifact name="sport-news:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,15 +10,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f12678d-29e6-4beb-89ca-5a8c7c0da15d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5df21ae-efbb-4eae-9c0f-d2cfba20de1a.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5df21ae-efbb-4eae-9c0f-d2cfba20de1a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5df21ae-efbb-4eae-9c0f-d2cfba20de1a/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5df21ae-efbb-4eae-9c0f-d2cfba20de1a/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rs/rnk/example/sportnews/controller/ArticlesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rs/rnk/example/sportnews/controller/ArticlesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rs/rnk/example/sportnews/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rs/rnk/example/sportnews/controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rs/rnk/example/sportnews/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rs/rnk/example/sportnews/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rs/rnk/example/sportnews/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rs/rnk/example/sportnews/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rs/rnk/example/sportnews/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rs/rnk/example/sportnews/dao/ArticleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rs/rnk/example/sportnews/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rs/rnk/example/sportnews/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/article.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/components/dashboard/categories.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/components/dashboard/categories.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/components/dashboard/header.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/components/dashboard/header.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/components/dashboard/nav.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/components/dashboard/nav.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/components/header.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/components/header.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/components/nav.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/components/nav.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploads/03_03_2019_12_37_40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/uploads/03_03_2019_12_37_40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploads/placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rs/rnk/example/sportnews/controller/ArticlesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rs/rnk/example/sportnews/controller/ArticlesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rs/rnk/example/sportnews/controller/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rs/rnk/example/sportnews/controller/DashboardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rs/rnk/example/sportnews/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rs/rnk/example/sportnews/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rs/rnk/example/sportnews/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rs/rnk/example/sportnews/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rs/rnk/example/sportnews/dao/ArticleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rs/rnk/example/sportnews/dao/ArticleDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rs/rnk/example/sportnews/service/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rs/rnk/example/sportnews/service/ArticleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rs/rnk/example/sportnews/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rs/rnk/example/sportnews/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/classes/rs/rnk/example/sportnews/controller/ArticlesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/classes/rs/rnk/example/sportnews/controller/ArticlesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/classes/rs/rnk/example/sportnews/controller/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/classes/rs/rnk/example/sportnews/controller/DashboardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/classes/rs/rnk/example/sportnews/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/classes/rs/rnk/example/sportnews/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/classes/rs/rnk/example/sportnews/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/classes/rs/rnk/example/sportnews/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/classes/rs/rnk/example/sportnews/dao/ArticleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/classes/rs/rnk/example/sportnews/dao/ArticleDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/classes/rs/rnk/example/sportnews/service/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/classes/rs/rnk/example/sportnews/service/ArticleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/classes/rs/rnk/example/sportnews/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/classes/rs/rnk/example/sportnews/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/lib/HikariCP-2.7.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/article.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/category.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/category.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/components/dashboard/categories.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/components/dashboard/categories.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/components/dashboard/header.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/components/dashboard/header.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/components/dashboard/nav.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/components/dashboard/nav.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/components/header.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/components/header.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/components/nav.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/components/nav.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/resources/uploads/03_03_2019_12_37_40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/sport-news/resources/uploads/03_03_2019_12_37_40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sport-news/resources/uploads/placeholder.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -38,6 +99,9 @@
     </option>
   </component>
   <component name="ProjectId" id="293Gxu7NxmvbGQ0FTmLM3YLcf0N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,12 +110,14 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/UML/Sport News/sport-news&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/UML/news/sport-news&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -61,11 +127,10 @@
 }</component>
   <component name="RunManager">
     <configuration name="Sportnews" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="corretto-16">
-      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="sport-news:war">
+        <artifact name="sport-news:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/sport_news_war" />
+            <option name="CONTEXT_PATH" value="/sport_news_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -143,7 +208,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="sport-news:war" />
+          <artifact name="sport-news:war exploded" />
         </option>
       </method>
     </configuration>
@@ -162,10 +227,37 @@
       <workItem from="1653555950396" duration="2923000" />
       <workItem from="1653573197421" duration="70000" />
       <workItem from="1653573289329" duration="1212000" />
+      <workItem from="1653574896039" duration="419000" />
+      <workItem from="1653575323490" duration="341000" />
+      <workItem from="1653747153681" duration="30000" />
+      <workItem from="1653792065941" duration="896000" />
+      <workItem from="1653793331038" duration="24000" />
+      <workItem from="1653828724803" duration="843000" />
+      <workItem from="1653898349337" duration="2073000" />
+      <workItem from="1653901489615" duration="2727000" />
+      <workItem from="1653906246712" duration="6417000" />
+      <workItem from="1654006850080" duration="1571000" />
+      <workItem from="1654052421030" duration="17198000" />
+      <workItem from="1654091966554" duration="797000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

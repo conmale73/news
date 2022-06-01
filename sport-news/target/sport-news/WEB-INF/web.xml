@@ -6,14 +6,14 @@
 	version="4.0">
 
 	<request-character-encoding>UTF-8</request-character-encoding>
-	<display-name>Sport News</display-name>
+	<display-name>News</display-name>
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 	<context-param>
 		<param-name>snUploadDirectory</param-name>
 		<param-value>
-			E:/dev/projects/personal/sport-news/eclipse-workspace/sport-news/src/main/webapp/resources/uploads
+			D:/UML/news/sport-news/src/main/webapp/resources/uploads
 		</param-value>
 	</context-param>
 	<error-page>

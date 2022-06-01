@@ -16,7 +16,7 @@
 							<div class="col-md-6 row">
 								<div class="col-md-4">
 								
-									<a href="<c:url value="/article"><c:param name="articleId" value="${ requestScope.mostPopular.get(i).id }" /></c:url>"><img class="img-fluid" id="articleImage" src="<c:url value="/images/${requestScope.mostPopular.get(i).imagePath}"/>"></a>
+									<a href="<c:url value="/article"><c:param name="articleId" value="${ requestScope.mostPopular.get(i).id }" /></c:url>"><img class="img-fluid" id="articleImage" src="<c:url value="/resources/uploads/${requestScope.mostPopular.get(i).imagePath}"/>"></a>
 								</div>
 								<div class="col-md-8">
 									<a href="<c:url value="/article"><c:param name="articleId" value="${ requestScope.mostPopular.get(i).id }" /></c:url>"><h5>${ requestScope.mostPopular.get(i).title }</h5></a>
@@ -31,7 +31,7 @@
 						<c:forEach begin="2" end="3" var="i">
 							<div class="col-md-6 row">
 								<div class="col-md-4">
-									<a href="<c:url value="/article"><c:param name="articleId" value="${ requestScope.mostPopular.get(i).id }" /></c:url>"><img class="img-fluid" id="articleImage" src="<c:url value="/images/${requestScope.mostPopular.get(i).imagePath}"/>"></a>
+									<a href="<c:url value="/article"><c:param name="articleId" value="${ requestScope.mostPopular.get(i).id }" /></c:url>"><img class="img-fluid" id="articleImage" src="<c:url value="/resources/uploads/${requestScope.mostPopular.get(i).imagePath}"/>"></a>
 								</div>
 								<div class="col-md-8">
 									<a href="<c:url value="/article"><c:param name="articleId" value="${ requestScope.mostPopular.get(i).id }" /></c:url>"><h5>${ requestScope.mostPopular.get(i).title }</h5></a>
@@ -52,7 +52,7 @@
 						<c:forEach items="${ requestScope.latest }" var="article">
 						<div class="col-md-12 row mb-4">
 							<div class="col-md-4">
-								<a href="<c:url value="/article"><c:param name="articleId" value="${ article.id }" /></c:url>"><img class="img-fluid" id="articleImage" src="<c:url value="/images/${article.imagePath}"/>"></a>
+								<a href="<c:url value="/article"><c:param name="articleId" value="${ article.id }" /></c:url>"><img class="img-fluid" id="articleImage" src="<c:url value="/resources/uploads/${article.imagePath}"/>"></a>
 							</div>
 							<div class="col-md-8">
 								<a href="<c:url value="/article"><c:param name="articleId" value="${ article.id }" /></c:url>"><h5>${ article.title }</h5></a>

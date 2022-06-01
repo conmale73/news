@@ -138,7 +138,77 @@ public class ArticlesController extends HttpServlet {
 				request.getRequestDispatcher("/dashboard/articles/add").forward(request, response);
 			}
 		} else if(action.equals("edit")) {
-			
+//			String editArticleSubmit = request.getParameter("editArticleSubmit");
+//			if(editArticleSubmit != null) {
+//				String title = request.getParameter("addArticleTitle");
+//				String categoryIdStr = request.getParameter("addArticleCategoryId");
+//				String content = request.getParameter("addArticleContent");
+//				String imageCredits = request.getParameter("addArticleImageCredits");
+//
+//				request.setAttribute("addArticleTitle", title);
+//				request.setAttribute("addArticleCategoryId", categoryIdStr);
+//				request.setAttribute("addArticleContent", content);
+//				request.setAttribute("addArticleImageCredits", imageCredits);
+//
+//				Article article = new Article();
+//				article.setTitle(title);
+//				article.setContent(content);
+//				article.setPublished(new Date());
+//				article.setEdited(new Date());
+//				article.setViews(0);
+//				var category = new Category();
+//				category.setId(Integer.parseInt(categoryIdStr));
+//				article.setCategory(category);
+//				article.setAuthor(userService.getCurrentUser());
+//				article.setImageCredits(imageCredits);
+//
+//				var uploadDirectory = getServletContext().getAttribute("snUploadDirectory");
+//				var fileName = "";
+//				var currentDate = new Date();
+//				var dateFormatter = new SimpleDateFormat("dd_MM_yyy_h_mm_ss");
+//				var formattedDate = dateFormatter.format(currentDate);
+//				var extension = "";
+//				try {
+//					for (Part part: request.getParts()) {
+//
+//						if(part != null && part.getSize() > 0) {
+//
+//							fileName = part.getSubmittedFileName();
+//
+//							if(fileName != null) {
+//								int dotIndex = fileName.lastIndexOf('.');
+//								extension = fileName.substring(dotIndex);
+//							}
+//
+//							var contentType = part.getContentType();
+//
+//							if(contentType == null || !contentType.equalsIgnoreCase("image/jpeg")
+//									|| fileName == null) {
+//								continue;
+//							}
+//							part.write(uploadDirectory + File.separator + formattedDate + extension);
+//						}
+//
+//					}
+//				} catch (FileNotFoundException e) {
+//					e.printStackTrace();
+//					messageService.addMessage(Messages.FILE_UPLOAD_ERROR, MessageType.ERROR);
+//					request.getRequestDispatcher("/dashboard/articles/add").forward(request, response);
+//					return;
+//				}
+//				if(extension != null && !extension.equalsIgnoreCase("")) {
+//					article.setImagePath(formattedDate + extension);
+//				} else {
+//					article.setImagePath("");
+//				}
+//				boolean success = articleService.add(messageService, article);
+//
+//				if(success) {
+//					messageService.addMessage(Messages.ADD_ARTICLE_SUCCESS, MessageType.SUCCESS);
+//				}
+//
+//				request.getRequestDispatcher("/dashboard/articles/add").forward(request, response);
+//			}
 		}
 	}
 

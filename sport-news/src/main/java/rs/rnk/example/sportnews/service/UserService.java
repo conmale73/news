@@ -27,10 +27,11 @@ public class UserService extends Service{
 	
 	public boolean logIn(HttpSession session, MessageService messageService, String username, String password) {
 		User user = (User) session.getAttribute("currentUser");
+
 		if (user != null) {
 			return true;
 		}
-		
+
 		user = userDao.get(username, password);
 
 		boolean error = false;

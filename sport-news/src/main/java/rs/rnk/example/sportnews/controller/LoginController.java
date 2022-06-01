@@ -21,50 +21,59 @@ import rs.rnk.example.sportnews.util.Messages;
 
 @WebServlet(urlPatterns = {"/do/login"})
 public class LoginController extends HttpServlet {
-	
-	private static final long serialVersionUID = 1L;
 
-	@Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
-		
-		HttpSession session = request.getSession();
-		request.setAttribute("loginUsername", username);
-		
-		ServiceFinder rsf = new RequestServiceFinder(request);
-		MessageService messageService = (MessageService) rsf.find("messageService");
-		
-		if(username == null || username.equals("")) {
-			messageService.addMessage(new Message(MessageType.ERROR, Messages.USERNAME_EMPTY));
-		}
-		if(password == null || password.equals("")) {
-			messageService.addMessage(new Message(MessageType.ERROR, Messages.PASSWORD_EMPTY));
-		}
-		
-		if(messageService.getNumberOfMessages() > 0) {
-			request.getRequestDispatcher("/login").forward(request, response);
-			return;
-		}
-		
-		ServiceFinder ssf = new SessionServiceFinder(session);
-		UserService userService = (UserService) ssf.find("userService");
-		
-		boolean success = userService.logIn(session, messageService, username, password);
-		if(!success) {
-			request.getRequestDispatcher("/login").forward(request, response);
-			return;
-		}
-		User user = userService.getCurrentUser();
-		switch(user.getUserRole().getId()) {
-		case 7: case 6: case 5: case 4:
-			response.sendRedirect(getServletContext().getContextPath() + "/dashboard");
-			return;
-		}
-	}
-	
-	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("/login").forward(request, response);
-	}
+    private static final long serialVersionUID = 1L;
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+
+        HttpSession session = request.getSession();
+        request.setAttribute("loginUsername", username);
+
+        ServiceFinder rsf = new RequestServiceFinder(request);
+        MessageService messageService = (MessageService) rsf.find("messageService");
+
+        if (username == null || username.equals("")) {
+            messageService.addMessage(new Message(MessageType.ERROR, Messages.USERNAME_EMPTY));
+        }
+        if (password == null || password.equals("")) {
+            messageService.addMessage(new Message(MessageType.ERROR, Messages.PASSWORD_EMPTY));
+        }
+
+        if (messageService.getNumberOfMessages() > 0) {
+            request.getRequestDispatcher("/login").forward(request, response);
+            return;
+        }
+
+        ServiceFinder ssf = new SessionServiceFinder(session);
+        UserService userService = (UserService) ssf.find("userService");
+
+        boolean success = userService.logIn(session, messageService, username, password);
+        if (!success) {
+            request.getRequestDispatcher("/login").forward(request, response);
+            return;
+        }
+        User user = userService.getCurrentUser();
+        switch (user.getUserRole().getId()) {
+            case 7:
+                response.sendRedirect(getServletContext().getContextPath() + "/dashboard");
+                break;
+            case 6:
+                response.sendRedirect(getServletContext().getContextPath() + "/dashboard");
+                break;
+            case 5:
+                response.sendRedirect(getServletContext().getContextPath() + "/home");
+                break;
+            case 4:
+                response.sendRedirect(getServletContext().getContextPath() + "/home");
+                break;
+        }
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher("/login").forward(request, response);
+    }
 }
